@@ -332,7 +332,7 @@ private:
 			}
 			for (int jj = label_vec_size; jj<2 * label_vec_size; jj++)
 			{
-				M_tmp[rel][jj][ii] -= belta*rate*x*label_vec[e1][jj- label_vec_size];
+				M_tmp[rel][jj][ii] -= belta*rate*x*label_vec[e2][jj- label_vec_size];
 			}
 
 			relation_tmp[rel][ii] -= belta*rate*x;
