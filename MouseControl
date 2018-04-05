@@ -1,36 +1,6 @@
-package test;
-
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.io.IOException;
-
-public class HelloWorld {
-    public static void main(String[] args) throws AWTException, IOException, InterruptedException {
-        Robot myRobot = new Robot();
-        int i = 0;
-        while (i < 10000) {
-
-            myRobot.mouseMove(400, 400);
-            myRobot.mousePress(KeyEvent.BUTTON1_MASK);
-            myRobot.mouseRelease(KeyEvent.BUTTON1_MASK);
-            myRobot.delay(500);
-            myRobot.mouseMove(400, 500);
-            myRobot.mousePress(KeyEvent.BUTTON1_MASK);
-            myRobot.mouseRelease(KeyEvent.BUTTON1_MASK);
-            myRobot.delay(500);
-            myRobot.mouseMove(850, 600);
-            myRobot.mousePress(KeyEvent.BUTTON3_MASK);
-            myRobot.mouseRelease(KeyEvent.BUTTON3_MASK);
-            myRobot.delay(500);
-            Thread.sleep(6000);
-            i++;
-        }
-    }
-
-    public static void pressKey(Robot robot, int keyvalue) {
-        robot.keyPress(keyvalue);
-        robot.keyRelease(keyvalue);
-    }
-
+@book{zheng2017social,
+  title={Social Networks with Rich Edge Semantics},
+  author={Zheng, Quan and Skillicorn, David},
+  year={2017},
+  publisher={CRC Press}
 }
